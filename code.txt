@@ -8,8 +8,8 @@ int main() {
     scanf("%d %d", &number1, &number2);
 
     // calculating sum (multiplication khaled)
-    sum = number1 + number2; 
-// modification sum     
+    sum = number1 - number2; 
+// modification sum en soustraction (alex)     
     
     printf("%d + %d = %d", number1, number2, sum);
     return 0;
