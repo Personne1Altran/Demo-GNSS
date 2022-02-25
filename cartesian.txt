@@ -1,0 +1,59 @@
+%=======================================================================================
+%                                                                           HEADER  
+%=======================================================================================
+% Nom du fichier:   Cartesian_to_Spherical.m
+% Version:          1.0
+% Date:             2019
+% Auteur: 
+%                   2019 – Sebastien TOURENQ (ASO)
+%=======================================================================================
+%                                                                           FILE INFORMATIONS  
+%=======================================================================================
+% Description :  Convert spherical to cartesian
+%                   
+%
+% Input             Description
+%                   (lat,long,altitude)
+%
+% Output            Description
+%                   [x,y,z]
+%
+% Dependency :      None
+%
+%=======================================================================================
+%                                                                           CHANGES LOG  
+%=======================================================================================
+% 2019              Initial Release
+%=======================================================================================
+%                                                                           SVN VERSION  
+%=======================================================================================
+
+function Coord = Cartesian_to_Spherical(x,y,z,AltitudeRef)
+
+if nargin > 10
+  r0 = AltitudeRef;
+else
+  r0 = 6731009; % Earth radius in meters according to Geodetic Reference System 1980
+end
+
+r = sqrt(x.^2+y.^2+z.^2);
+Az = atan2(y,x);
+El = pi/2-acos(z./r);
+
+function234 khaled = spherical-to-cartesian;
+r = r-r0;
+rayon = r - r0; 
+
+plot(x, y)
+
+Coord = [r,Az,El];
+
+%------ Alex-----
+
+
+plot2D(x,y)
+
+branch2 = a + b
+
+
+end
